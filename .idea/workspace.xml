@@ -5,6 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4d4efa92-15b0-42fe-ae2d-f57006cfd409" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Final-Itam-v" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/delete.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/flaskProject.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/flaskProject.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
@@ -417,7 +421,7 @@
       <workItem from="1734297642657" duration="30000" />
       <workItem from="1734299040667" duration="126000" />
       <workItem from="1734299227903" duration="9504000" />
-      <workItem from="1734335656307" duration="949000" />
+      <workItem from="1734335656307" duration="1208000" />
     </task>
     <servers />
   </component>
