@@ -5,6 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4d4efa92-15b0-42fe-ae2d-f57006cfd409" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Final-Itam-v" beforeDir="false" afterPath="$PROJECT_DIR$/Final-Itam-v" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Final-Itam-v/backend/delete.py" beforeDir="false" />
     </list>
@@ -97,8 +98,8 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Flask server.Flask" />
       <item itemvalue="Flask server.flaskProject" />
+      <item itemvalue="Flask server.Flask" />
     </list>
   </component>
   <component name="SharedIndexes">
@@ -125,6 +126,7 @@
       <workItem from="1734299227903" duration="9504000" />
       <workItem from="1734335656307" duration="1208000" />
       <workItem from="1734336886934" duration="315000" />
+      <workItem from="1734337818578" duration="472000" />
     </task>
     <servers />
   </component>
