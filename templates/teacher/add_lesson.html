@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Lesson</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    {% include 'navbar.html' %}
+
+    <h1>Add New Lesson for {{ course.name }}</h1>
+    <form method="POST">
+        <div>
+            <label for="topic">Lesson Topic:</label>
+            <input type="text" id="topic" name="topic" required>
+        </div>
+
+        <div>
+            <label for="date">Lesson Date:</label>
+            <input type="date" id="date" name="date" required>
+        </div>
+
+        <div>
+            <label for="start_time">Start Time:</label>
+            <input type="time" id="start_time" name="start_time" required>
+        </div>
+
+        <div>
+            <label for="end_time">End Time:</label>
+            <input type="time" id="end_time" name="end_time">
+        </div>
+
+        <div>
+            <label for="location">Location:</label>
+            <input type="text" id="location" name="location">
+        </div>
+
+        <button type="submit">Add Lesson</button>
+    </form>
+
+    <a href="{{ url_for('teacher.course_details', course_id=course.id) }}">Back to Course Details</a>
+</body>
+</html>

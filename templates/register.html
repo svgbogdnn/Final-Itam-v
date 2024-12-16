@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Register</title>
+</head>
+<body>
+    <h1>Register</h1>
+    <form method="POST" action="{{ url_for('auth.register') }}">
+        <label for="full_name">Full Name (ФИО):</label>
+        <input type="text" name="full_name" required><br>
+
+        <label for="role">Role:</label>
+        <select name="role" required>
+            <option value="Student">Student</option>
+            <option value="Teacher">Teacher</option>
+        </select><br>
+
+        <label for="email">Email:</label>
+        <input type="email" name="email" required><br>
+
+        <label for="phone_number">Phone Number:</label>
+        <input type="text" name="phone_number" required><br>
+
+        <label for="password">Password:</label>
+        <input type="password" name="password" required><br>
+
+        <label for="confirm_password">Confirm Password:</label>
+        <input type="password" name="confirm_password" required><br>
+
+        <label>
+            <input type="checkbox" name="accept_policy" required>
+            I accept the <a href="{{ url_for('auth.policy') }}">site policy</a>.
+        </label><br>
+
+        <button type="submit">Register</button>
+    </form>
+
+    <a href="{{ url_for('auth.login') }}">Already have an account? Login here</a>
+
+    {% with messages = get_flashed_messages(with_categories=true) %}
+    {% if messages %}
+        <ul>
+        {% for category, message in messages %}
+            <li style="color: {{ 'green' if category == 'success' else 'red' }}">{{ message }}</li>
+        {% endfor %}
+        </ul>
+    {% endif %}
+    {% endwith %}
+</body>
+</html>

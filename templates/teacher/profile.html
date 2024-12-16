@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Profile</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    {% include 'navbar.html' %}
+    <h1>User Profile</h1>
+
+    <div class="profile-details">
+        <form method="POST" action="{{ url_for('teacher.profile') }}" enctype="multipart/form-data">
+            <!-- Profile Picture -->
+            <div>
+                <img src="{{ user.profile_picture or url_for('static', filename='images/default-avatar.jpg') }}" alt="Profile Picture" class="profile-picture">
+                <label for="profile_picture">Change Profile Picture:</label>
+                <input type="file" name="profile_picture" accept="image/*">
+            </div>
+
+            <!-- Full Name -->
+            <div>
+                <label for="full_name">Full Name:</label>
+                <input type="text" name="full_name" value="{{ user.full_name }}" required>
+            </div>
+
+            <!-- Email -->
+            <div>
+                <label for="email">Email:</label>
+                <input type="email" name="email" value="{{ user.email }}" required readonly>
+            </div>
+
+            <!-- Phone Number -->
+            <div>
+                <label for="phone_number">Phone Number:</label>
+                <input type="text" name="phone_number" value="{{ user.phone_number }}" required>
+            </div>
+
+            <!-- Nickname -->
+            <div>
+                <label for="nickname">Nickname:</label>
+                <input type="text" name="nickname" value="{{ user.nickname }}">
+            </div>
+
+            <!-- University -->
+            <div>
+                <label for="university">University:</label>
+                <input type="text" name="university" value="{{ user.university }}">
+            </div>
+
+            <!-- Institute -->
+            <div>
+                <label for="institute">Institute:</label>
+                <input type="text" name="institute" value="{{ user.institute }}">
+            </div>
+
+            <!-- Date of Birth -->
+            <div>
+                <label for="date_of_birth">Date of Birth:</label>
+                <input type="date" name="date_of_birth" value="{{ user.date_of_birth.strftime('%Y-%m-%d') if user.date_of_birth else '' }}">
+            </div>
+
+            <!-- Address -->
+            <div>
+                <label for="address">Address:</label>
+                <input type="text" name="address" value="{{ user.address }}">
+            </div>
+
+            <!-- Telegram Link -->
+            <div>
+                <label for="telegram_link">Telegram Link:</label>
+                <input type="url" name="telegram_link" value="{{ user.telegram_link }}">
+            </div>
+
+            <!-- Two-Factor Authentication -->
+            <div>
+                <label for="two_factor_enabled">Enable Two-Factor Authentication:</label>
+                <input type="checkbox" name="two_factor_enabled" {% if user.two_factor_enabled %}checked{% endif %}>
+            </div>
+
+            <!-- Bio -->
+            <div>
+                <label for="bio">Bio:</label>
+                <textarea name="bio">{{ user.bio }}</textarea>
+            </div>
+
+            <!-- Favorite Sports Club -->
+            <div>
+                <label for="favorite_sport_club">Favorite Sports Club:</label>
+                <input type="text" name="favorite_sport_club" value="{{ user.favorite_sport_club }}">
+            </div>
+
+            <!-- Submit Button -->
+            <div>
+                <button type="submit">Save Changes</button>
+            </div>
+        </form>
+
+        <a href="{{ url_for('teacher.profile') }}">Back to Profile</a>
+    </div>
+</body>
+</html>

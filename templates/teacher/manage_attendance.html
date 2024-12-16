@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Manage Attendance</title>
+</head>
+<body>
+    <h1>Manage Attendance for Course: {{ course.name }}</h1>
+    <h2>Lesson: {{ lesson.topic }}</h2>
+
+    <form method="POST" action="{{ url_for('teacher.manage_attendance', lesson_id=lesson.id) }}">
+        <label for="lesson_id">Select Lesson:</label>
+        <select name="lesson_id" id="lesson_id" required>
+            {% for lesson in lessons %}
+            <option value="{{ lesson.id }}" {% if lesson.id == selected_lesson_id %}selected{% endif %}>
+                {{ lesson.date }} - {{ lesson.topic }}
+            </option>
+            {% endfor %}
+        </select>
+        <br><br>
+        <table border="1">
+            <thead>
+                <tr>
+                    <th>Student</th>
+                    <th>Status</th>
+                    <th>Comments</th>
+                    <th>Reason Provided</th>
+                </tr>
+            </thead>
+        <tbody>
+            {% for record in attendance_records %}
+            <tr>
+                <td>{{ record.student.full_name }}</td>
+                <td>
+                    <select name="status_{{ record.id }}" required>
+                        <option value="present" {% if record.status == 'present' %}selected{% endif %}>Present</option>
+                        <option value="absent" {% if record.status == 'absent' %}selected{% endif %}>Absent</option>
+                        <option value="late" {% if record.status == 'late' %}selected{% endif %}>Late</option>
+                    </select>
+                </td>
+                <td>
+                    <input type="text" name="comment_{{ record.id }}" value="{{ record.comments }}">
+                </td>
+                <td>
+                    <input type="text" name="reason_{{ record.id }}" value="{{ record.reason_of_excuse }}">
+                </td>
+            </tr>
+            {% endfor %}
+        </tbody>
+
+        </table>
+        <br>
+        <button type="submit">Update Attendance</button>
+    </form>
+    <br>
+    <a href="{{ url_for('teacher.manage_attendance', lesson_id=lesson.id) }}">Manage Attendance</a>
+</body>
+</html>

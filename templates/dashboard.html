@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <title>Dashboard</title>
+    <form action="{{ url_for('auth.logout') }}" method="POST">
+        <button type="submit">Logout</button>
+    </form>
+
+
+</head>
+<body>
+  {% include 'navbar.html' %}
+    <div class="header">
+         <body>
+    <div class="header">
+        <!-- Приветствие пользователя с фото -->
+        <div class="welcome">
+            <img src="{{ user.profile_picture or url_for('static', filename='images/default-avatar.jpg') }}" alt="Profile Picture" class="profile-picture" style="width: 50px; height: 50px; border-radius: 50%; margin-right: 10px;">
+            Добро пожаловать, <strong>{{ user.full_name }}</strong>! (<strong>{{ user.role }}</strong>)
+        </div>
+
+    </div>
+    <!-- Вставьте это прямо перед </body> -->
+    <div class="notifications-popup" id="notificationsPopup" style="display: none;">
+        <div class="notifications-header">
+            <h2>Notifications</h2>
+            <button onclick="closeNotifications()">Close</button>
+        </div>
+        <ul id="notificationsList">
+            <!-- Уведомления подгружаются через JavaScript -->
+        </ul>
+    </div>
+
+    <!-- Остальной контент страницы -->
+</body>
+
+        <div class="teacher-rating">
+            <h3>Your rating today is - {{ teacher_rating }}</h3>
+            <p>Thank you for your contribution!</p>
+        </div>
+        <div class="search-bar">
+            <input type="text" placeholder="Search students, courses, or lessons">
+        </div>
+        <a href="{{ url_for('teacher.profile') }}" class="profile-button">Profile</a>
+    </div>
+    <div class="main-menu">
+        <a href="/teacher/courses">Courses</a>
+        <a href="/teacher/attendance">Attendance</a>
+        <a href="/teacher/feedback">Feedback</a>
+        <a href="/teacher/export">Export</a>
+    </div>
+    <div class="container">
+        <!-- Добавить курс и урок -->
+        <div class="add-buttons">
+            <a href="{{ url_for('teacher.add_course') }}" class="btn btn-primary">Добавить курс</a>
+            <a href="{{ url_for('teacher.add_lesson_general') }}" class="btn btn-secondary">Добавить урок</a>
+        </div>
+
+
+
+        <!-- Блок статистики -->
+        <div class="stats-container">
+            <div class="stats-card">
+                <h3>Total Registered Users</h3>
+                <p>{{ total_users }}</p>
+            </div>
+            <div class="stats-card">
+                <h3>Total Students</h3>
+                <p>{{ total_students }}</p>
+            </div>
+            <div class="stats-card">
+                <h3>Total Teachers</h3>
+                <p>{{ total_teachers }}</p>
+            </div>
+            <div class="stats-card">
+                <h3>Active Users (Last 24 Hours)</h3>
+                <p>{{ active_users }}</p>
+            </div>
+            <div class="stats-card">
+                <h3>Active Courses</h3>
+                <p>{{ active_courses }}</p>
+            </div>
+            <div class="stats-card">
+                <h3>Most Popular Course</h3>
+                <p>{{ popular_course }}</p>
+            </div>
+            <div class="stats-card">
+                <h3>Average Lesson Rating</h3>
+                <p>{{ avg_lesson_rating }}</p>
+            </div>
+        </div>
+    </div>
+    <div class="footer-links">
+        <p>Don't know how to correctly use the site?</p>
+        <p>No problem, we'll help you! Just click on
+            <a href="{{ url_for('teacher.help_page') }}">Help</a>
+            or check out some
+            <a href="{{ url_for('teacher.tips_page') }}">Tips</a>.
+        </p>
+    </div>
+</body>
+</html>

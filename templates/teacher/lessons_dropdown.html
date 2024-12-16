@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lessons Dropdown</title>
+</head>
+<body>
+    <select name="date" onchange="updateLessons()">
+        <option value="">Select a lesson</option>
+        {% for lesson in lessons %}
+            <option value="{{ lesson.id }}" {% if lesson.id in lesson_filter %}selected{% endif %}>
+                {{ lesson.date }}
+            </option>
+        {% endfor %}
+    </select>
+</body>
+</html>

@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Analyze Feedback</title>
+</head>
+<body>
+    <h1>Feedback Analysis for {{ course.name }}</h1>
+    <p><strong>Average Rating:</strong> {{ feedback_summary.average_rating }}</p>
+    <p><strong>Total Comments:</strong> {{ feedback_summary.total_comments }}</p>
+    <p><strong>Positive Comments:</strong> {{ feedback_summary.positive_comments }}</p>
+    <p><strong>Negative Comments:</strong> {{ feedback_summary.negative_comments }}</p>
+    <a href="{{ url_for('teacher.courses') }}">Back to Courses</a>
+</body>
+</html>

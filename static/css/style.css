@@ -1,0 +1,239 @@
+body {
+    background-color: #121212; /* Темный фон */
+    color: #f5f5f5; /* Светлый текст */
+}
+
+a {
+    color: #1e90ff; /* Цвет ссылок */
+}
+
+a:hover {
+    color: #00bfff; /* Цвет ссылок при наведении */
+}
+
+
+/* Общие стили для navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #1c1c1c; /* Более темный фон для navbar */
+    color: #ffffff;
+    padding: 10px 20px;
+}
+
+.navbar .logo {
+    width: 50px;
+    height: auto;
+}
+
+.navbar .nav-links a {
+    color: #a9a9a9; /* Светло-серый цвет ссылок */
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.navbar .nav-links a:hover {
+    text-decoration: underline;
+        color: #ffffff; /* Белый цвет при наведении */
+}
+
+.navbar .user-profile {
+    display: flex;
+    align-items: center;
+}
+
+.navbar .user-profile .notification-btn,
+.navbar .user-profile .profile-btn {
+    color: white;
+    font-size: 24px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.navbar .user-profile .notification-btn:hover,
+.navbar .user-profile .profile-btn:hover {
+    color: #f0f0f0;
+}
+/* Это для того, чтобы ссылка занимала всю ширину */
+a.profile-btn {
+    display: block;  /* Делает ссылку блочным элементом */
+    width: 100%;  /* Заставляет ссылку занимать всю ширину контейнера */
+    text-align: center;  /* Центрирует текст внутри ссылки */
+    padding: 10px 0;  /* Добавляет вертикальные отступы для удобства */
+    background-color: #f8f8f8;  /* Устанавливает цвет фона (по желанию) */
+    text-decoration: none;  /* Убирает подчеркивание у ссылки */
+    color: #000;  /* Цвет текста */
+}
+
+/* Контейнер, который удерживает ссылку вверху страницы */
+.profile-btn-container {
+    width: 100%;  /* Ширина 100% */
+    position: fixed;  /* Закрепляем элемент в верхней части экрана */
+    top: 0;  /* Отступ от верхнего края */
+    left: 0;  /* Отступ от левого края */
+    background-color: #f8f8f8;  /* Цвет фона */
+    z-index: 1000;  /* При необходимости, ставим сверху всех остальных элементов */
+}
+.add-buttons {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    display: flex;
+    gap: 10px;
+}
+
+.add-buttons .btn {
+    background-color: #333; /* Темный фон кнопок */
+    color: #f5f5f5;
+    padding: 10px 20px;
+    font-size: 16px;
+    text-align: center;
+}
+
+.add-buttons {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    display: flex;
+    gap: 10px;
+}
+
+.add-buttons .btn {
+    padding: 10px 20px;
+    font-size: 16px;
+    text-align: center;
+}
+
+.bulk-actions {
+    margin-bottom: 20px;
+    display: flex;
+    gap: 10px;
+}
+
+.btn-success {
+    background-color: #198754;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.btn-danger {
+    background-color: #bb2d3b;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.btn-success:hover, .btn-danger:hover {
+    opacity: 0.9;
+}
+
+.navbar-profile-picture {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 10px;
+}
+
+
+
+
+
+
+
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #121212; /* Темный фон */
+    color: #f5f5f5; /* Светлый текст */
+}
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #1c1c1c;
+    color: #f5f5f5;
+    padding: 10px 20px;
+}
+.header .welcome {
+    font-size: 18px;
+}
+.header .search-bar input {
+    padding: 5px;
+    width: 200px;
+}
+.header .profile-button {
+    padding: 5px 10px;
+    background-color: #ffffff;
+    color: #4CAF50;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.notifications-button {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    padding: 10px;
+    background-color: #ffffff;
+    color: #4CAF50;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.stats-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 20px;
+}
+.stats-card {
+    width: 250px;
+    padding: 15px;
+    margin-bottom: 15px;
+    background-color: #333;
+    color: #f5f5f5;
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+.stats-card h3 {
+    margin: 0;
+    font-size: 18px;
+}
+.stats-card p {
+    margin: 5px 0 0;
+    font-size: 24px;
+    font-weight: bold;
+}
+.main-menu {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+.main-menu a {
+    display: block;
+    padding: 15px 30px;
+    margin: 10px;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    background-color: #4CAF50;
+    border-radius: 5px;
+    font-size: 18px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease;
+}
+.main-menu a:hover {
+    background-color: #45a049;
+}

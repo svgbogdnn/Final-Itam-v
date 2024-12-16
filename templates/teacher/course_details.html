@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Course Details</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    {% include 'navbar.html' %}
+
+    <!-- Название курса -->
+    <h1>{{ course.name }}</h1>
+
+    <p><a href="https://drive.google.com/drive/folders/1GueARJAPBxz3tUTUc1I5YUVBuBwhMPKp" target="_blank">Google Drive Link for Lessons</a></p>
+
+    <!-- Описание курса -->
+    <p><strong>Description:</strong> {{ course.description }}</p>
+    <p><strong>Duration:</strong> {{ course.start_date }} - {{ course.end_date }}</p>
+    <a href="{{ url_for('teacher.add_lesson', course_id=course.id) }}">Add Lesson</a>
+    <!-- Список уроков -->
+    <h2>Lessons</h2>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Topic</th>
+                <th>Location</th>
+                <th>Date</th>
+                <th>Recording</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for lesson in lessons %}
+                <tr>
+                    <td>{{ lesson.topic }}</td>
+                    <td>{{ lesson.location }}</td>
+                    <td>{{ lesson.date }}</td>
+                    <td>
+                        {% if lesson.recording_link %}
+                            <a href="{{ lesson.recording_link }}" target="_blank">View Recording</a>
+                        {% else %}
+                            <em>No recording available</em>
+                        {% endif %}
+                    </td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+
+    <!-- Статистика уроков -->
+    <h3>Statistics</h3>
+    <p>Total Lessons: {{ statistics.total_lessons }}</p>
+    <p>Completed Lessons: {{ statistics.completed_lessons }}</p>
+    <p>Remaining Lessons: {{ statistics.remaining_lessons }}</p>
+
+</body>
+</html>

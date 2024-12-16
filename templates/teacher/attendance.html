@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Attendance Management</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+
+    <style>
+        /* Стиль для фильтров */
+        .filter {
+            cursor: pointer;
+            padding: 5px;
+            background: #f0f0f0;
+            margin: 5px;
+            width: 120px;
+            border-radius: 4px;
+            text-align: center;
+        }
+
+        .filter-content {
+            display: none;
+            padding: 10px;
+            background: #fff;
+            border-radius: 4px;
+            margin-top: 5px;
+        }
+
+        .filter.active .filter-content {
+            display: block;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        th, td {
+            padding: 8px;
+            border: 1px solid #ddd;
+        }
+
+        th {
+            background-color: #f0f0f0;
+        }
+    </style>
+</head>
+<body>
+    {% include 'navbar.html' %}
+    <h1>Attendance Management</h1>
+
+    <!-- Форма фильтрации -->
+    <form method="GET" action="{{ url_for('teacher.attendance') }}">
+        <div class="filters">
+            <!-- Фильтр по курсу -->
+            <div class="filter">
+                Курс
+                <div class="course-filter">
+                    <select name="course" id="course-filter" onchange="updateLessons()">
+                        <option value="">Select a course</option>
+                        {% for course in courses %}
+                            <option value="{{ course.id }}" {% if course.id in course_filter %}selected{% endif %}>
+                                {{ course.name }}
+                            </option>
+                        {% endfor %}
+                    </select>
+                </div>
+            </div>
+
+            <!-- Фильтр по дате (будет обновляться через JS) -->
+            <div class="filter">
+                <label for="date-filter">Дата:</label>
+                <input type="date" id="date-filter" name="date" value="{{ date_filter|join(',') }}">
+            </div>
+
+
+            <!-- Фильтр по статусу -->
+            <div class="filter">
+                Статус
+                <div class="status-filter">
+                    <select name="status" id="status-filter" multiple>
+                        <option value="was" {% if 'was' in status_filter %}selected{% endif %}>Was</option>
+                        <option value="not" {% if 'not' in status_filter %}selected{% endif %}>Not</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+
+        <div class="bulk-actions">
+            <button type="button" onclick="updateAllStatuses('was')" class="btn btn-success">Отметить всех присутствующими</button>
+            <button type="button" onclick="updateAllStatuses('not')" class="btn btn-danger">Отметить всех отсутствующими</button>
+        </div>
+
+        <button type="submit">Apply Filters</button>
+        <a href="{{ url_for('teacher.attendance') }}">Reset Filters</a>
+    </form>
+
+    <!-- Таблица -->
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Student Name</th>
+                <th>Course</th>
+                <th>Date</th>
+                <th>Status</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for record in attendance_records %}
+                <tr>
+                    <td>{{ record.student.full_name }}</td>
+                    <td>{{ record.lesson.course.name }}</td>
+                    <td>{{ record.lesson.date }}</td>
+                    <td>
+                        <button class="status-button"
+                                data-id="{{ record.id }}"
+                                onclick="updateStatus({{ record.id }}, this)">
+                            {{ 'Was' if record.status == 'was' else 'Not' }}
+                        </button>
+                        <a href="{{ url_for('teacher.edit_attendance_record', record_id=record.id) }}" class="edit-button">Edit</a>
+                    </td>
+
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+
+    <script>
+        // Функция для обновления списка дат в зависимости от выбранного курса
+        function updateLessons() {
+            const courseId = document.getElementById('course-filter').value;
+            const dateSelect = document.getElementById('date-filter');
+
+            // Очищаем текущий список дат
+            dateSelect.innerHTML = "<option value=''>Select a date</option>";
+
+            // Загружаем уроки для выбранного курса
+            if (courseId) {
+                fetch(`/get_lessons_for_course/${courseId}`)
+                    .then(response => response.json())
+                    .then(data => {
+                        data.lessons.forEach(lesson => {
+                            const option = document.createElement("option");
+                            option.value = lesson.date;
+                            option.text = lesson.date;
+                            dateSelect.appendChild(option);
+                        });
+                    });
+            }
+        }
+
+    </script>
+    <script>
+        function updateStatus(recordId, button) {
+            fetch(`/teacher/attendance/update_status/${recordId}`, {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                }
+            })
+            .then(response => response.json())
+            .then(data => {
+                if (data.success) {
+                    // Обновляем текст кнопки в зависимости от нового статуса
+                    button.textContent = data.new_status === 'was' ? 'Was' : 'Not';
+                } else {
+                    alert('Failed to update status!');
+                }
+            })
+            .catch(err => console.error(err));
+        }
+    </script>
+    <script>
+        function updateAllStatuses(newStatus) {
+            fetch('/teacher/update_all_statuses', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({ status: newStatus }),
+            })
+            .then(response => {
+                if (response.ok) {
+                    location.reload(); // Перезагрузка страницы для отображения изменений
+                } else {
+                    alert('Ошибка при обновлении статусов');
+                }
+            })
+            .catch(error => console.error('Ошибка:', error));
+        }
+    </script>
+
+
+</body>
+</html>

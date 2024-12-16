@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Edit Course</title>
+</head>
+<body>
+    <h1>Edit Course</h1>
+    <form method="POST" action="{{ url_for('teacher.edit_course', course_id=course.id) }}">
+        <label for="name">Course Name:</label>
+        <input type="text" name="name" value="{{ course.name }}" required><br>
+
+        <label for="description">Description:</label>
+        <textarea name="description" required>{{ course.description }}</textarea><br>
+
+        <label for="start_date">Start Date:</label>
+        <input type="date" name="start_date" value="{{ course.start_date }}"><br>
+
+        <label for="end_date">End Date:</label>
+        <input type="date" name="end_date" value="{{ course.end_date }}"><br>
+
+        <label for="course_code">Course Code:</label>
+        <input type="text" name="course_code" value="{{ course.course_code }}" required><br>
+
+        <label for="category">Category:</label>
+        <input type="text" name="category" value="{{ course.category }}"><br>
+
+        <button type="submit">Update Course</button>
+    </form>
+</body>
+</html>

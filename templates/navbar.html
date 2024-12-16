@@ -1,0 +1,63 @@
+<!-- navbar.html -->
+<div class="navbar">
+    <img src="{{ url_for('static', filename='images/logo.png') }}" alt="Logo" class="logo">
+
+    <div class="nav-links">
+        <a href="{{ url_for('teacher.courses') }}">Courses</a>
+        <a href="{{ url_for('teacher.attendance') }}">Attendance</a>
+        <a href="{{ url_for('teacher.feedback') }}">Feedback</a>
+        <a href="{{ url_for('teacher.export') }}">Export</a>
+    </div>
+
+    <!-- Кнопка для уведомлений -->
+    <button class="notification-btn" onclick="openNotifications()">🔔 Notifications</button>
+
+    <!-- Профиль пользователя -->
+    <div class="user-profile">
+        <img src="{{ current_user.profile_picture or url_for('static', filename='images/default-avatar.jpg') }}"
+             alt="Profile Picture" class="navbar-profile-picture">
+        <a href="{{ url_for('teacher.profile') }}">👤 Profile</a>
+    </div>
+
+</div>
+
+<!-- Всплывающее окно уведомлений -->
+<div class="notifications-popup" id="notificationsPopup" style="display: none;">
+    <div class="notifications-header">
+        <h2>Notifications</h2>
+        <button onclick="closeNotifications()">Close</button>
+    </div>
+    <div class="notifications-list">
+        <ul id="notificationsList">
+            <!-- Уведомления подгружаются через JS -->
+        </ul>
+    </div>
+    <div class="notifications-footer">
+        <a href="{{ url_for('teacher.all_notifications') }}">See All</a>
+    </div>
+</div>
+
+<script>
+    function openNotifications() {
+        fetch('/teacher/notifications/get')
+            .then(response => response.json())
+            .then(data => {
+                const notificationsList = document.getElementById('notificationsList');
+                notificationsList.innerHTML = '';
+                data.forEach(notification => {
+                    const listItem = document.createElement('li');
+                    listItem.innerHTML = `
+                        <p>${notification.message}</p>
+                        ${notification.link ? `<a href="${notification.link}">View</a>` : ''}
+                        <small>${notification.date_time}</small>
+                    `;
+                    notificationsList.appendChild(listItem);
+                });
+                document.getElementById('notificationsPopup').style.display = 'block';
+            });
+    }
+
+    function closeNotifications() {
+        document.getElementById('notificationsPopup').style.display = 'none';
+    }
+</script>

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Управление отзывами</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <style>
+        /* Ваши стили */
+        .filter-container {
+            display: flex;
+            flex-wrap: wrap;
+            margin-bottom: 20px;
+        }
+        .filter {
+            margin-right: 20px;
+            margin-bottom: 10px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 10px;
+        }
+        th, td {
+            padding: 8px;
+            border: 1px solid #ddd;
+        }
+        th {
+            background-color: #f4f4f4;
+        }
+        .actions button {
+            margin: 2px;
+        }
+    </style>
+    <script>
+        function updateFilters() {
+            const courseId = document.getElementById('course-filter').value;
+            const specificDate = document.getElementById('specific-date').value;
+            const sortBy = document.getElementById('sort-by').value;
+            const sortOrder = document.getElementById('sort-order').value;
+            const params = new URLSearchParams();
+
+            if (courseId) params.append('course_id', courseId);
+            if (specificDate) params.append('specific_date', specificDate);
+            if (sortBy) params.append('sort_by', sortBy);
+            if (sortOrder) params.append('sort_order', sortOrder);
+
+            window.location.href = `${window.location.pathname}?${params.toString()}`;
+        }
+    </script>
+</head>
+<body>
+    <h1>Управление отзывами</h1>
+    {% include 'navbar.html' %}
+
+    <!-- Фильтры -->
+    <div class="filter-container">
+        <div class="filter">
+            <label for="course-filter">Курс:</label>
+            <select id="course-filter" onchange="updateFilters()">
+                <option value="">Все курсы</option>
+                {% for course in courses %}
+                    <option value="{{ course.id }}" {% if course.id == selected_course_id %}selected{% endif %}>
+                        {{ course.name }}
+                    </option>
+                {% endfor %}
+            </select>
+        </div>
+        <div class="filter">
+            <label for="specific-date">Дата:</label>
+            <input type="date" id="specific-date" value="{{ specific_date }}" onchange="updateFilters()">
+        </div>
+        <div class="filter">
+            <label for="sort-by">Сортировать по:</label>
+            <select id="sort-by" onchange="updateFilters()">
+                <option value="date" {% if sort_by == 'date' %}selected{% endif %}>Дата</option>
+                <option value="mark" {% if sort_by == 'mark' %}selected{% endif %}>Оценка</option>
+            </select>
+        </div>
+        <div class="filter">
+            <label for="sort-order">Порядок:</label>
+            <select id="sort-order" onchange="updateFilters()">
+                <option value="asc" {% if sort_order == 'asc' %}selected{% endif %}>По возрастанию</option>
+                <option value="desc" {% if sort_order == 'desc' %}selected{% endif %}>По убыванию</option>
+            </select>
+        </div>
+    </div>
+
+    <!-- Таблица отзывов -->
+    <table>
+        <thead>
+            <tr>
+                <th>Название курса</th>
+                <th>ФИО</th>
+                <th>Дата урока</th>
+                <th>Оценка</th>
+                <th>Фидбек</th>
+                <th>Действия</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for feedback in feedback_records %}
+                <tr {% if feedback.is_hidden %}style="display:none"{% endif %}>
+                    <td>{{ feedback.course_name }}</td>
+                    <td>{{ feedback.student.full_name }}</td>
+                    <td>{{ feedback.lesson.date.strftime('%Y-%m-%d') }}</td>
+                    <td>{{ feedback.mark }}</td>
+                    <td>{{ feedback.comment }}</td>
+                    <td class="actions">
+                        <!-- Скрыть/Показать -->
+                        {% if not feedback.is_hidden %}
+                            <form method="POST" action="{{ url_for('teacher.hide_feedback', feedback_id=feedback.id) }}" style="display:inline;">
+                                <button type="submit">Скрыть</button>
+                            </form>
+                        {% else %}
+                            <form method="POST" action="{{ url_for('teacher.unhide_feedback', feedback_id=feedback.id) }}" style="display:inline;">
+                                <button type="submit">Показать</button>
+                            </form>
+                        {% endif %}
+                        <!-- Ответить -->
+                        <form method="POST" action="{{ url_for('teacher.reply_feedback', feedback_id=feedback.id) }}" style="display:inline;">
+                            <input type="text" name="response" placeholder="Ваш ответ">
+                            <button type="submit">Ответить</button>
+                        </form>
+                    </td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</body>
+</html>
