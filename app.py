@@ -14,7 +14,7 @@ class Config:
     SECRET_KEY = os.getenv("SECRET_KEY", "your_default_secret")
 
 def create_app():
-    app = Flask(__name__, template_folder='D:/Apps/PyCharm/itamsvg/templates')    # Загрузка конфигурации
+    app = Flask(__name__, template_folder='D:/Apps/PyCharm/itamsvg/templates')
     app.config.from_object(Config)
 
     db.init_app(app)
