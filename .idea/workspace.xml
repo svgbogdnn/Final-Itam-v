@@ -5,306 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4d4efa92-15b0-42fe-ae2d-f57006cfd409" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Final-Itam-v" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/delete.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/flaskProject.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/flaskProject.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Final-Itam-v" beforeDir="false" afterPath="$PROJECT_DIR$/Final-Itam-v" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Final-Itam-v/backend/delete.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/app.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/.idea/flaskProject.iml" beforeDir="false" afterPath="$PROJECT_DIR$/backend/.idea/flaskProject.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/backend/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/backend/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/app.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/backend/.idea/flaskProject.iml" beforeDir="false" afterPath="$PROJECT_DIR$/backend/backend/.idea/flaskProject.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/backend/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/backend/backend/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/backend/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/backend/backend/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/backend/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/backend/app.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/backend/backend/.idea/flaskProject.iml" beforeDir="false" afterPath="$PROJECT_DIR$/backend/backend/backend/.idea/flaskProject.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/backend/backend/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/backend/backend/backend/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/backend/backend/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/backend/backend/backend/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/backend/backend/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/backend/backend/app.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/backend/backend/backend/.idea/flaskProject.iml" beforeDir="false" afterPath="$PROJECT_DIR$/backend/backend/backend/backend/.idea/flaskProject.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/backend/backend/backend/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/backend/backend/backend/backend/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/backend/backend/backend/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/backend/backend/backend/backend/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/backend/backend/backend/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/backend/backend/backend/app.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/backend/backend/backend/backend/.idea/flaskProject.iml" beforeDir="false" afterPath="$PROJECT_DIR$/backend/backend/backend/backend/backend/.idea/flaskProject.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/backend/backend/backend/backend/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/backend/backend/backend/backend/backend/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/backend/backend/backend/backend/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/backend/backend/backend/backend/backend/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/backend/backend/backend/backend/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/backend/backend/backend/backend/app.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/backend/backend/backend/backend/backend/.idea/flaskProject.iml" beforeDir="false" afterPath="$PROJECT_DIR$/backend/backend/backend/backend/backend/backend/.idea/flaskProject.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/backend/backend/backend/backend/backend/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/backend/backend/backend/backend/backend/backend/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/backend/backend/backend/backend/backend/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/backend/backend/backend/backend/backend/backend/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/backend/backend/backend/backend/backend/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/backend/backend/backend/backend/backend/app.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/backend/backend/backend/backend/backend/backend/.idea/flaskProject.iml" beforeDir="false" afterPath="$PROJECT_DIR$/backend/backend/backend/backend/backend/backend/backend/.idea/flaskProject.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/backend/backend/backend/backend/backend/backend/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/backend/backend/backend/backend/backend/backend/backend/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/backend/backend/backend/backend/backend/backend/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/backend/backend/backend/backend/backend/backend/backend/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/backend/backend/backend/backend/backend/backend/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/backend/backend/backend/backend/backend/backend/app.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/backend/backend/backend/backend/backend/backend/backend/.idea/flaskProject.iml" beforeDir="false" afterPath="$PROJECT_DIR$/backend/backend/backend/backend/backend/backend/backend/backend/.idea/flaskProject.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/backend/backend/backend/backend/backend/backend/backend/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/backend/backend/backend/backend/backend/backend/backend/backend/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/backend/backend/backend/backend/backend/backend/backend/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/backend/backend/backend/backend/backend/backend/backend/backend/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/backend/backend/backend/backend/backend/backend/backend/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/backend/backend/backend/backend/backend/backend/backend/app.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/backend/backend/backend/backend/backend/backend/backend/app/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/backend/backend/backend/backend/backend/backend/backend/app/models.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/backend/backend/backend/backend/backend/backend/backend/app/routes/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/backend/backend/backend/backend/backend/backend/backend/app/routes/auth.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/backend/backend/backend/backend/backend/backend/backend/app/routes/authjson.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/backend/backend/backend/backend/backend/backend/backend/app/routes/teacher.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/backend/backend/backend/backend/backend/backend/backend/app/routes/teacherjson.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/backend/backend/backend/backend/backend/backend/backend/migrations/README" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/backend/backend/backend/backend/backend/backend/backend/migrations/alembic.ini" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/backend/backend/backend/backend/backend/backend/backend/migrations/env.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/backend/backend/backend/backend/backend/backend/backend/migrations/script.py.mako" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/backend/backend/backend/backend/backend/backend/backend/static/css/style.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/backend/backend/backend/backend/backend/backend/backend/templates/dashboard.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/backend/backend/backend/backend/backend/backend/backend/templates/forgot_password.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/backend/backend/backend/backend/backend/backend/backend/templates/help.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/backend/backend/backend/backend/backend/backend/backend/templates/login.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/backend/backend/backend/backend/backend/backend/backend/templates/navbar.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/backend/backend/backend/backend/backend/backend/backend/templates/notifications.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/backend/backend/backend/backend/backend/backend/backend/templates/policy.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/backend/backend/backend/backend/backend/backend/backend/templates/register.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/backend/backend/backend/backend/backend/backend/backend/templates/success.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/backend/backend/backend/backend/backend/backend/backend/templates/teacher/add_course.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/backend/backend/backend/backend/backend/backend/backend/templates/teacher/add_lesson.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/backend/backend/backend/backend/backend/backend/backend/templates/teacher/add_lesson_general.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/backend/backend/backend/backend/backend/backend/backend/templates/teacher/analyze_feedback.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/backend/backend/backend/backend/backend/backend/backend/templates/teacher/attendance.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/backend/backend/backend/backend/backend/backend/backend/templates/teacher/course_details.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/backend/backend/backend/backend/backend/backend/backend/templates/teacher/courses.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/backend/backend/backend/backend/backend/backend/backend/templates/teacher/edit_attendance.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/backend/backend/backend/backend/backend/backend/backend/templates/teacher/edit_course.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/backend/backend/backend/backend/backend/backend/backend/templates/teacher/export.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/backend/backend/backend/backend/backend/backend/backend/templates/teacher/feedback.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/backend/backend/backend/backend/backend/backend/backend/templates/teacher/lessons_dropdown.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/backend/backend/backend/backend/backend/backend/backend/templates/teacher/manage_attendance.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/backend/backend/backend/backend/backend/backend/backend/templates/teacher/manage_feedback.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/backend/backend/backend/backend/backend/backend/backend/templates/teacher/profile.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/backend/backend/backend/backend/backend/backend/backend/templates/teacher/view_students.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/backend/backend/backend/backend/backend/backend/backend/templates/tips.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/backend/backend/backend/backend/backend/backend/migrations/README" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/backend/backend/backend/backend/backend/backend/migrations/alembic.ini" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/backend/backend/backend/backend/backend/backend/migrations/env.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/backend/backend/backend/backend/backend/backend/migrations/script.py.mako" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/backend/backend/backend/backend/backend/backend/static/css/style.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/backend/backend/backend/backend/backend/backend/templates/dashboard.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/backend/backend/backend/backend/backend/backend/templates/forgot_password.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/backend/backend/backend/backend/backend/backend/templates/help.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/backend/backend/backend/backend/backend/backend/templates/login.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/backend/backend/backend/backend/backend/backend/templates/navbar.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/backend/backend/backend/backend/backend/backend/templates/notifications.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/backend/backend/backend/backend/backend/backend/templates/policy.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/backend/backend/backend/backend/backend/backend/templates/register.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/backend/backend/backend/backend/backend/backend/templates/success.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/backend/backend/backend/backend/backend/backend/templates/teacher/add_course.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/backend/backend/backend/backend/backend/backend/templates/teacher/add_lesson.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/backend/backend/backend/backend/backend/backend/templates/teacher/add_lesson_general.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/backend/backend/backend/backend/backend/backend/templates/teacher/analyze_feedback.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/backend/backend/backend/backend/backend/backend/templates/teacher/attendance.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/backend/backend/backend/backend/backend/backend/templates/teacher/course_details.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/backend/backend/backend/backend/backend/backend/templates/teacher/courses.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/backend/backend/backend/backend/backend/backend/templates/teacher/edit_attendance.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/backend/backend/backend/backend/backend/backend/templates/teacher/edit_course.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/backend/backend/backend/backend/backend/backend/templates/teacher/export.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/backend/backend/backend/backend/backend/backend/templates/teacher/feedback.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/backend/backend/backend/backend/backend/backend/templates/teacher/lessons_dropdown.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/backend/backend/backend/backend/backend/backend/templates/teacher/manage_attendance.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/backend/backend/backend/backend/backend/backend/templates/teacher/manage_feedback.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/backend/backend/backend/backend/backend/backend/templates/teacher/profile.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/backend/backend/backend/backend/backend/backend/templates/teacher/view_students.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/backend/backend/backend/backend/backend/backend/templates/tips.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/backend/backend/backend/backend/backend/migrations/README" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/backend/backend/backend/backend/backend/migrations/alembic.ini" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/backend/backend/backend/backend/backend/migrations/env.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/backend/backend/backend/backend/backend/migrations/script.py.mako" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/backend/backend/backend/backend/backend/static/css/style.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/backend/backend/backend/backend/backend/templates/dashboard.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/backend/backend/backend/backend/backend/templates/forgot_password.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/backend/backend/backend/backend/backend/templates/help.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/backend/backend/backend/backend/backend/templates/login.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/backend/backend/backend/backend/backend/templates/navbar.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/backend/backend/backend/backend/backend/templates/notifications.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/backend/backend/backend/backend/backend/templates/policy.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/backend/backend/backend/backend/backend/templates/register.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/backend/backend/backend/backend/backend/templates/success.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/backend/backend/backend/backend/backend/templates/teacher/add_course.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/backend/backend/backend/backend/backend/templates/teacher/add_lesson.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/backend/backend/backend/backend/backend/templates/teacher/add_lesson_general.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/backend/backend/backend/backend/backend/templates/teacher/analyze_feedback.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/backend/backend/backend/backend/backend/templates/teacher/attendance.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/backend/backend/backend/backend/backend/templates/teacher/course_details.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/backend/backend/backend/backend/backend/templates/teacher/courses.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/backend/backend/backend/backend/backend/templates/teacher/edit_attendance.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/backend/backend/backend/backend/backend/templates/teacher/edit_course.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/backend/backend/backend/backend/backend/templates/teacher/export.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/backend/backend/backend/backend/backend/templates/teacher/feedback.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/backend/backend/backend/backend/backend/templates/teacher/lessons_dropdown.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/backend/backend/backend/backend/backend/templates/teacher/manage_attendance.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/backend/backend/backend/backend/backend/templates/teacher/manage_feedback.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/backend/backend/backend/backend/backend/templates/teacher/profile.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/backend/backend/backend/backend/backend/templates/teacher/view_students.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/backend/backend/backend/backend/backend/templates/tips.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/backend/backend/backend/backend/migrations/README" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/backend/backend/backend/backend/migrations/alembic.ini" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/backend/backend/backend/backend/migrations/env.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/backend/backend/backend/backend/migrations/script.py.mako" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/backend/backend/backend/backend/static/css/style.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/backend/backend/backend/backend/templates/dashboard.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/backend/backend/backend/backend/templates/forgot_password.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/backend/backend/backend/backend/templates/help.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/backend/backend/backend/backend/templates/login.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/backend/backend/backend/backend/templates/navbar.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/backend/backend/backend/backend/templates/notifications.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/backend/backend/backend/backend/templates/policy.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/backend/backend/backend/backend/templates/register.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/backend/backend/backend/backend/templates/success.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/backend/backend/backend/backend/templates/teacher/add_course.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/backend/backend/backend/backend/templates/teacher/add_lesson.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/backend/backend/backend/backend/templates/teacher/add_lesson_general.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/backend/backend/backend/backend/templates/teacher/analyze_feedback.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/backend/backend/backend/backend/templates/teacher/attendance.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/backend/backend/backend/backend/templates/teacher/course_details.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/backend/backend/backend/backend/templates/teacher/courses.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/backend/backend/backend/backend/templates/teacher/edit_attendance.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/backend/backend/backend/backend/templates/teacher/edit_course.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/backend/backend/backend/backend/templates/teacher/export.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/backend/backend/backend/backend/templates/teacher/feedback.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/backend/backend/backend/backend/templates/teacher/lessons_dropdown.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/backend/backend/backend/backend/templates/teacher/manage_attendance.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/backend/backend/backend/backend/templates/teacher/manage_feedback.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/backend/backend/backend/backend/templates/teacher/profile.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/backend/backend/backend/backend/templates/teacher/view_students.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/backend/backend/backend/backend/templates/tips.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/backend/backend/backend/migrations/README" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/backend/backend/backend/migrations/alembic.ini" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/backend/backend/backend/migrations/env.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/backend/backend/backend/migrations/script.py.mako" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/backend/backend/backend/static/css/style.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/backend/backend/backend/templates/dashboard.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/backend/backend/backend/templates/forgot_password.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/backend/backend/backend/templates/help.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/backend/backend/backend/templates/login.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/backend/backend/backend/templates/navbar.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/backend/backend/backend/templates/notifications.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/backend/backend/backend/templates/policy.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/backend/backend/backend/templates/register.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/backend/backend/backend/templates/success.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/backend/backend/backend/templates/teacher/add_course.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/backend/backend/backend/templates/teacher/add_lesson.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/backend/backend/backend/templates/teacher/add_lesson_general.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/backend/backend/backend/templates/teacher/analyze_feedback.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/backend/backend/backend/templates/teacher/attendance.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/backend/backend/backend/templates/teacher/course_details.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/backend/backend/backend/templates/teacher/courses.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/backend/backend/backend/templates/teacher/edit_attendance.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/backend/backend/backend/templates/teacher/edit_course.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/backend/backend/backend/templates/teacher/export.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/backend/backend/backend/templates/teacher/feedback.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/backend/backend/backend/templates/teacher/lessons_dropdown.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/backend/backend/backend/templates/teacher/manage_attendance.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/backend/backend/backend/templates/teacher/manage_feedback.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/backend/backend/backend/templates/teacher/profile.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/backend/backend/backend/templates/teacher/view_students.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/backend/backend/backend/templates/tips.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/backend/backend/migrations/README" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/backend/backend/migrations/alembic.ini" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/backend/backend/migrations/env.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/backend/backend/migrations/script.py.mako" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/backend/backend/static/css/style.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/backend/backend/templates/dashboard.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/backend/backend/templates/forgot_password.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/backend/backend/templates/help.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/backend/backend/templates/login.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/backend/backend/templates/navbar.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/backend/backend/templates/notifications.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/backend/backend/templates/policy.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/backend/backend/templates/register.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/backend/backend/templates/success.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/backend/backend/templates/teacher/add_course.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/backend/backend/templates/teacher/add_lesson.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/backend/backend/templates/teacher/add_lesson_general.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/backend/backend/templates/teacher/analyze_feedback.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/backend/backend/templates/teacher/attendance.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/backend/backend/templates/teacher/course_details.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/backend/backend/templates/teacher/courses.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/backend/backend/templates/teacher/edit_attendance.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/backend/backend/templates/teacher/edit_course.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/backend/backend/templates/teacher/export.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/backend/backend/templates/teacher/feedback.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/backend/backend/templates/teacher/lessons_dropdown.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/backend/backend/templates/teacher/manage_attendance.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/backend/backend/templates/teacher/manage_feedback.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/backend/backend/templates/teacher/profile.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/backend/backend/templates/teacher/view_students.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/backend/backend/templates/tips.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/backend/migrations/README" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/backend/migrations/alembic.ini" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/backend/migrations/env.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/backend/migrations/script.py.mako" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/backend/static/css/style.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/backend/templates/dashboard.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/backend/templates/forgot_password.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/backend/templates/help.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/backend/templates/login.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/backend/templates/navbar.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/backend/templates/notifications.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/backend/templates/policy.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/backend/templates/register.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/backend/templates/success.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/backend/templates/teacher/add_course.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/backend/templates/teacher/add_lesson.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/backend/templates/teacher/add_lesson_general.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/backend/templates/teacher/analyze_feedback.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/backend/templates/teacher/attendance.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/backend/templates/teacher/course_details.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/backend/templates/teacher/courses.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/backend/templates/teacher/edit_attendance.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/backend/templates/teacher/edit_course.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/backend/templates/teacher/export.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/backend/templates/teacher/feedback.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/backend/templates/teacher/lessons_dropdown.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/backend/templates/teacher/manage_attendance.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/backend/templates/teacher/manage_feedback.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/backend/templates/teacher/profile.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/backend/templates/teacher/view_students.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/backend/templates/tips.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/migrations/README" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/migrations/alembic.ini" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/migrations/env.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/migrations/script.py.mako" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/static/css/style.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/templates/dashboard.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/templates/forgot_password.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/templates/help.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/templates/login.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/templates/navbar.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/templates/notifications.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/templates/policy.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/templates/register.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/templates/success.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/templates/teacher/add_course.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/templates/teacher/add_lesson.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/templates/teacher/add_lesson_general.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/templates/teacher/analyze_feedback.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/templates/teacher/attendance.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/templates/teacher/course_details.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/templates/teacher/courses.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/templates/teacher/edit_attendance.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/templates/teacher/edit_course.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/templates/teacher/export.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/templates/teacher/feedback.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/templates/teacher/lessons_dropdown.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/templates/teacher/manage_attendance.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/templates/teacher/manage_feedback.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/templates/teacher/profile.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/templates/teacher/view_students.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/templates/tips.html" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -342,19 +44,19 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/Apps/PyCharm/itamsvg&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "D:/Apps/PyCharm/itamsvg",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\Apps\PyCharm\itamsvg\static\css" />
@@ -422,6 +124,7 @@
       <workItem from="1734299040667" duration="126000" />
       <workItem from="1734299227903" duration="9504000" />
       <workItem from="1734335656307" duration="1208000" />
+      <workItem from="1734336886934" duration="315000" />
     </task>
     <servers />
   </component>
