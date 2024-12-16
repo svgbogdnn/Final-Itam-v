@@ -97,8 +97,8 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Flask server.flaskProject" />
       <item itemvalue="Flask server.Flask" />
+      <item itemvalue="Flask server.flaskProject" />
     </list>
   </component>
   <component name="SharedIndexes">
